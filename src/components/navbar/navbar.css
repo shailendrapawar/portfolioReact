@@ -1,5 +1,4 @@
 
-
 .nav-bar{
     background-color: #000814;
     position: sticky;
@@ -7,14 +6,16 @@
 
 }
 .nav-1{
-    /* display:flex ; */
+   
     height: inherit;
+    align-items:center;
 }
 .logo-icon{
     align-items: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-
+    background-image: url("./1-letter-s.png");
+    background-size: cover;
+    position: relative;
+    animation: loading 0.8s 1;
 }
 .center-nav{
     max-width: 400px;
@@ -38,6 +39,8 @@
     color: white;
     display:none;
     height: inherit;
+    align-items:center;
+   
 }
 .menu-icon{
    transition: 0.1s ease-in-out;
@@ -47,16 +50,17 @@
 }
 
 .nav2-items{
-    display: grid;
+    display: none;
     color:white;
     background-color: #000814d2;
     place-items: center;
-    z-index: 1;
+    z-index: 2;
     width: 60%;
     height: 90vh;
     position:absolute;
-    top: 60px;
+    top: 64px;
     right: 0px;
+    animation: menuLoad 0.2s 1;
 }
 .nav2-inner{
     height: 50%;
@@ -66,6 +70,10 @@
     align-items: center;
     justify-content: space-around;
 }
+.nav2-inner:active  .nav2-items{
+    display: none;
+
+}
 .nav2-inner a{
     width: 50%;
     font-size: 1.4rem;
@@ -73,7 +81,36 @@
     place-items: center;
 
 }
+.nav-2-inner a:hover{
+    background-color: aqua;
+}
 
+@keyframes loading{
+    0%{
+        top: -40px;
+        opacity: 0%;
+    }
+
+    100%{
+        top: 0px;
+        transform: rotateY(360deg);
+        opacity: 100%;
+    }
+}
+
+@keyframes menuLoad {
+    0%{
+
+        opacity: 50%;
+        right: -20px;
+    }
+    100%{
+        right:0px;
+        opacity: 100%;
+        /* background-color: aqua; */
+    }
+    
+}
 
 @media screen and (max-width:480px) {
 
@@ -85,4 +122,15 @@
         display: flex;
     }
     
+}
+@media screen and (max-width:760px){
+
+    .center-nav{
+        width: 50%;
+    }
+    .center-nav a{
+        width: 50px;
+        place-content: center;
+        font-size: 0.8rem;
+    }
 }
