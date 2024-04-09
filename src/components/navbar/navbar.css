@@ -2,9 +2,13 @@
 
 .nav-bar{
     background-color: #000814;
-    /* font-family:; */
     position: sticky;
     top: 0px;
+
+}
+.nav-1{
+    /* display:flex ; */
+    height: inherit;
 }
 .logo-icon{
     align-items: center;
@@ -28,4 +32,57 @@
 .contact-icon{
     align-items: center;
     font-size: 1.2rem;
+}
+
+.nav-2{
+    color: white;
+    display:none;
+    height: inherit;
+}
+.menu-icon{
+   transition: 0.1s ease-in-out;
+}
+.rotate{
+    transform: rotate(-90deg);
+}
+
+.nav2-items{
+    display: grid;
+    color:white;
+    background-color: #000814d2;
+    place-items: center;
+    z-index: 1;
+    width: 60%;
+    height: 90vh;
+    position:absolute;
+    top: 60px;
+    right: 0px;
+}
+.nav2-inner{
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav2-inner a{
+    width: 50%;
+    font-size: 1.4rem;
+    display: grid;
+    place-items: center;
+
+}
+
+
+@media screen and (max-width:480px) {
+
+    .nav-1{
+        display: none;
+
+    }
+    .nav-2{
+        display: flex;
+    }
+    
 }
