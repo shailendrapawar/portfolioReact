@@ -1,16 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { createBrowserRouter,Routes,Route,createRoutesFromElements, RouterProvider} from "react-router-dom";
 import './index.css'
-import {BrowserRouter, createBrowserRouter} from 'react-router-dom'
+import Layout from './Layout.jsx'
+import App from './App.jsx'
+import Navbar from './components/navbar/Navbar.jsx';
 
 const myRouter=createBrowserRouter(
-  createRoutesFromElement({
+  createRoutesFromElements(
     
-  })
+      <Route path='/' element={<Layout/>}>
+      
+      </Route>
+   
+  )
 )
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+  <RouterProvider router={myRouter}></RouterProvider>
   </React.StrictMode>,
 )
