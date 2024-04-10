@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter,Routes,Route,createRoutesFromElements, RouterProvider} from "react-router-dom";
 import './index.css'
 import Layout from './Layout.jsx'
-import App from './App.jsx'
-import Navbar from './components/navbar/Navbar.jsx';
+
+import Landing from './components/landing page/Landing.jsx';
+import ContactPage from './components/contact/ContactPage.jsx';
 
 const myRouter=createBrowserRouter(
   createRoutesFromElements(
     
       <Route path='/' element={<Layout/>}>
-      
+         <Route path='' element={<Landing/>}> </Route>
+         <Route path='/contact' element={<ContactPage/>}> </Route>
       </Route>
    
   )

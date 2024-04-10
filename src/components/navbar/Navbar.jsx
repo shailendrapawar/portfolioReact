@@ -4,9 +4,12 @@ import { NavLink } from 'react-router-dom'
 import { RiMenu3Line } from "react-icons/ri";
 import { TbArrowsCross } from "react-icons/tb";
 {/* <TbArrowsCross /> */}
+// import {useNavigate} from 'react-router-dom'
 
 function Navbar() {
 
+
+  // const navigate=useNavigate();
 
   //function for handling menu2-icon
   const [rotate, setRotate] = useState(true);
@@ -22,8 +25,8 @@ function Navbar() {
     }
   }
 
-  const handleClick=()=>{
 
+  const handleClick=()=>{
     document.querySelector("#menu-icon").classList.remove("rotate");
       setRotate(true);
       document.getElementById("nav2-items").style.display="none"
@@ -33,7 +36,8 @@ function Navbar() {
     <nav className='nav-bar h-16 '>
 
       <nav className='nav-1 flex justify-around  text-white'>
-        <div className='logo-icon flex justify-center w-12 h-12'>
+
+        <div  className='logo-icon flex justify-center w-12 h-12'>
         
         </div>
 
@@ -47,12 +51,12 @@ function Navbar() {
         </div>
 
         <div className='contact-icon flex'>
-          <NavLink>Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
       </nav>
 
       <nav className='nav-2 flex justify-between pl-5 pr-5'>
-        <div className='logo-icon flex justify-center w-12 h-12'>
+        <div  className='logo-icon flex justify-center w-12 h-12'>
         
         </div>
 
@@ -64,7 +68,7 @@ function Navbar() {
             <NavLink onClick={handleClick} className='items'>Skills</NavLink>
             <NavLink onClick={handleClick} className='items'>Services</NavLink>
             <NavLink onClick={handleClick} className='items'>Portfolio</NavLink>
-            <NavLink onClick={handleClick} className='items'>Contact</NavLink>
+            <NavLink to='/contact' onClick={handleClick} className='items'>Contact</NavLink>
           </div>
 
         </div>

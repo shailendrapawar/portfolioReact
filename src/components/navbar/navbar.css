@@ -3,10 +3,8 @@
     background-color: #000814;
     position: sticky;
     top: 0px;
-
 }
 .nav-1{
-   
     height: inherit;
     align-items:center;
 }
@@ -40,7 +38,6 @@
     display:none;
     height: inherit;
     align-items:center;
-   
 }
 .menu-icon{
    transition: 0.1s ease-in-out;
@@ -72,14 +69,12 @@
 }
 .nav2-inner:active  .nav2-items{
     display: none;
-
 }
 .nav2-inner a{
     width: 50%;
     font-size: 1.4rem;
     display: grid;
     place-items: center;
-
 }
 .nav-2-inner a:hover{
     background-color: aqua;
@@ -90,7 +85,6 @@
         top: -40px;
         opacity: 0%;
     }
-
     100%{
         top: 0px;
         transform: rotateY(360deg);
@@ -100,37 +94,33 @@
 
 @keyframes menuLoad {
     0%{
-
         opacity: 50%;
         right: -20px;
     }
     100%{
         right:0px;
         opacity: 100%;
-        /* background-color: aqua; */
     }
-    
 }
 
-@media screen and (max-width:480px) {
 
+/* responsive -=======================*/
+@media screen and (max-width:480px) {
     .nav-1{
         display: none;
-
     }
     .nav-2{
         display: flex;
-    }
-    
+    } 
 }
 @media screen and (max-width:760px){
 
     .center-nav{
-        width: 50%;
+        width: 55%;
     }
     .center-nav a{
-        width: 50px;
+        width: 60px;
         place-content: center;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
