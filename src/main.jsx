@@ -1,18 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter,Routes,Route,createRoutesFromElements, RouterProvider} from "react-router-dom";
+import { createBrowserRouter,Route,createRoutesFromElements, RouterProvider} from "react-router-dom";
 import './index.css'
 import Layout from './Layout.jsx'
 
-import Landing from './components/landing page/Landing.jsx';
 import ContactPage from './components/contact/ContactPage.jsx';
+import Home from './components/home/Home.jsx';
+import Projects from './components/projects/Projects.jsx';
 
 const myRouter=createBrowserRouter(
   createRoutesFromElements(
     
       <Route path='/' element={<Layout/>}>
-         <Route path='' element={<Landing/>}> </Route>
-         <Route path='/contact' element={<ContactPage/>}> </Route>
+
+         <Route path='' element={<Home/>} ></Route>
+         <Route path='/projects' element={<Projects/>} ></Route>
+         <Route path='/contact' element={<ContactPage/>}></Route>
+
       </Route>
    
   )

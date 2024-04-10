@@ -2,13 +2,13 @@ import React from 'react'
 import './contact.css'
 import { IoCaretBackCircle } from "react-icons/io5";
 import {useNavigate} from "react-router-dom";
+
 function ContactPage() {
 
     const navigate=useNavigate()
     const handleClick=()=>{
         navigate(-1);
     }
-
     return (
         <div className='contactPage flex flex-col items-center'>
 
@@ -32,8 +32,6 @@ function ContactPage() {
                 <button id='submit' className='text-white bg-yellow-500'>send message</button>
 
             </div>
-
-
         </div>
     )
 }
