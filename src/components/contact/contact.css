@@ -14,6 +14,8 @@
 
 .contact-top h1 {
   margin-left: 15%;
+  position: relative;
+  animation:loading 1s linear ;
 }
 .heading {
   width: 50%;
@@ -25,6 +27,8 @@
 .contact-middle {
   width: 100%;
   padding-left: 10%;
+  position: relative;
+  animation:loading 1s linear;
 }
 .form-body {
   width: 90%;
@@ -39,6 +43,8 @@
 }
 form {
   height: 80%;
+  position: relative;
+  animation:loading 1s linear;
 }
 form input {
   width: 80%;
@@ -61,7 +67,21 @@ form textarea {
   width: 120px;
   border-radius: 8px;
   margin-left: 60%;
+  position: relative;
   border: 1px solid #ffffff ;
+  animation:loading 1s linear;
+
+}
+
+@keyframes loading{
+    0%{
+        opacity: 0%;
+        left:-20px
+    }
+    100%{
+        opacity: 100%;
+        left: 0px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -72,3 +92,4 @@ form textarea {
     margin: 15%;
   }
 }
+
