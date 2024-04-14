@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { RiMenu3Line } from "react-icons/ri";
 import { TbArrowsCross } from "react-icons/tb";
 {/* <TbArrowsCross /> */ }
@@ -40,10 +40,10 @@ function Navbar() {
 
         <div className='center-nav flex'>
 
-          <NavLink className=" grid">Home</NavLink>
-          <NavLink>Skills</NavLink>
-          <NavLink>Services</NavLink>
-          <NavLink to='/projects'>Portfolio</NavLink>
+          <NavLink className={({isActive})=>isActive ?" grid active":"grid"} to='/'>Home</NavLink>
+          <Link> Skills</Link>
+          <Link>Services</Link>
+          <NavLink className={({isActive})=>isActive ?" grid active":"grid"} to='/projects'>Portfolio</NavLink>
 
         </div>
 
@@ -54,6 +54,7 @@ function Navbar() {
 
 
 
+
       <nav className='nav-2 flex justify-between pl-5 pr-5'>
         <div className='logo-icon flex justify-center w-12 h-12'></div>
 
@@ -61,10 +62,10 @@ function Navbar() {
         <div id='nav2-items' className='nav2-items'>
 
           <div className='nav2-inner'>
-            <NavLink onClick={handleClick} to='/' className='items'>Home</NavLink>
-            <NavLink onClick={handleClick} className='items'>Skills</NavLink>
-            <NavLink onClick={handleClick} className='items'>Services</NavLink>
-            <NavLink onClick={handleClick} to='/projects' className='items'>Portfolio</NavLink>
+            <NavLink onClick={handleClick} to='/' className={({isActive})=>isActive?"active items":"items"}>HOME</NavLink>
+            <Link onClick={handleClick} className='items'>Skills</Link>
+            <Link onClick={handleClick} className='items'>Services</Link>
+            <NavLink onClick={handleClick} to='/projects' className={({isActive})=>isActive?"active items":"items"}>PORTFOLIO</NavLink>
             <NavLink onClick={handleClick} to='/contact' className='items'>CONTACT</NavLink>
 
 
