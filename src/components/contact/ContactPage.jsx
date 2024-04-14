@@ -29,6 +29,7 @@ function ContactPage() {
                     <input placeholder="what is this regarding"></input>
                     <textarea ></textarea>
                 </form>
+                
                 <button id='submit' className='text-white bg-yellow-500'>send message</button>
 
             </div>

@@ -13,9 +13,9 @@ const myRouter=createBrowserRouter(
     
       <Route path='/' element={<Layout/>}>
 
-         <Route path='' element={<Home/>} ></Route>
-         <Route path='/projects' element={<Projects/>} ></Route>
-         <Route path='/contact' element={<ContactPage/>}></Route>
+         <Route  path= '' element={<Home/>} ></Route>
+         <Route path= 'projects' element={<Projects/>} ></Route>
+         <Route path= 'contact' element={<ContactPage/>}></Route>
 
       </Route>
    
@@ -24,6 +24,6 @@ const myRouter=createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={myRouter}></RouterProvider>
+  <RouterProvider router={myRouter} ></RouterProvider>
   </React.StrictMode>,
 )
