@@ -9,6 +9,10 @@
   padding: 0px;
   font-family: "Roboto", sans-serif;
 }
+body{
+  /* background-color: #000814; */
+}
 body::-webkit-scrollbar{
   display: none;
+ 
 }
