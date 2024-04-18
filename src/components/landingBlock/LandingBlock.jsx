@@ -21,10 +21,10 @@ function LandingBlock() {
           </div>
 
           <div className="left-middle">
-            <p className=" text-slate-300">
+            <p className=" text-slate-400">
               i like to create solid products with
             </p>
-            <span className=" text-slate-300">great user exerpience</span>
+            <span className=" text-slate-400">great user exerpience</span>
             <div className="social-links">
               <a href="https://github.com/shailendrapawar" target="blank">
                 <FaGithub />
