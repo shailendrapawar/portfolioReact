@@ -49,6 +49,7 @@
 .menu-icon {
   transition: 0.1s ease-in-out;
   z-index: 1;
+  animation: initLoading 1s 1;
 }
 .rotate {
   transform: rotate(-90deg);
@@ -92,11 +93,11 @@
 @keyframes initLoading {
   0% {
     opacity: 0%;
-    translate: -30px;
+    translate: 0px -30px;
   }
   100% {
     opacity: 100%;
-    translate: 0px;
+    translate: 0px 0px;
   }
 }
 @keyframes menuLoad {

@@ -4,10 +4,11 @@ import { NavLink, Link } from 'react-router-dom'
 import { RiMenu3Line } from "react-icons/ri";
 import { TbArrowsCross } from "react-icons/tb";
 {/* <TbArrowsCross /> */ }
-// import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 function Navbar() {
 
+  const navigate=useNavigate()
 
   //function for handling menu2-icon
   const [rotate, setRotate] = useState(true);
@@ -36,7 +37,7 @@ function Navbar() {
 
       <nav className='nav-1 flex justify-around  text-white'>
 
-        <div className='logo-icon flex justify-center w-12 h-12'></div>
+        <div onClick={()=>navigate("/")}  className='logo-icon flex justify-center w-12 h-12'></div>
 
         <div className='center-nav flex'>
 
@@ -56,7 +57,7 @@ function Navbar() {
 
 
       <nav className='nav-2 flex justify-between pl-5 pr-5'>
-        <div className='logo-icon flex justify-center w-12 h-12'></div>
+        <div onClick={()=>navigate("/")} className='logo-icon flex justify-center w-12 h-12'></div>
 
 
         <div id='nav2-items' className='nav2-items'>
