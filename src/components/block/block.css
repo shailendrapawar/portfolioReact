@@ -1,140 +1,121 @@
-.block-block{
-    background-color: #1A2634;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
+.block-block {
+  background-color: #1a2634;
+  height: 500px;
 }
-.block-body{
-    width: 95%;
-    height: 100%;
-    display: flex;
+.block-body {
+  width: 95%;
+  height: 100%;
 }
-.block-left{
-    width: 45%;
-    display: grid;
-    place-items: center;
+.block-left {
+  width: 45%;
 }
-.block-right{
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.block-right {
+  width: 55%;
 }
-.block-right h3{
-    font-size: 1.2rem;
-    margin-top: -25px;
+.block-right h3 {
+  font-size: 1.2rem;
+  margin-top: -25px;
 }
-.block-right h1{
-    font-size: 1.8rem;
-    text-align: center;
+.block-right h1 {
+  font-size: 1.8rem;
+  text-align: center;
 }
-.block-right p{
-    width: 90%;
-    font-size: 1.1rem;
+.block-right p {
+  width: 90%;
+  font-size: 1.1rem;
 }
-.block-left img{
+.block-left img {
   width: 100%;
   max-width: 400px;
   height: 80%;
   max-height: 400px;
-  border-radius: 20px;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
+  .block-block {
+    height: 600px;
+  }
+  .block-body {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+  }
+  .block-left {
+    width: 95%;
+    height: 350px;
+  }
+  .block-right {
+    width: 95%;
+    height: 60%;
+  }
 
-    .block-block{
-        height: 600px;
-    }
-    .block-body{
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-    }
-    .block-left{
-        width: 95%;
-        height: 350px;
-    }
-    .block-right{
-        width: 95%;
-        height: 60%;
-    }
-
-    .block-right h3{
-        font-size: 1rem;
-        margin-top: 0px;
-    }
-    .block-right h1{
-        font-size: 1.5rem;
-    }
-    .block-right p{
-        width:100%;
-        font-size: 0.9rem;
-    }
+  .block-right h3 {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  .block-right h1 {
+    font-size: 1.5rem;
+  }
+  .block-right p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
+@media (min-width: 480px) and (max-width: 600px) {
+  .block-block {
+    height: 650px;
+  }
+  .block-body {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .block-left {
+    width: 95%;
+    height: 350px;
+  }
+  .block-right {
+    width: 95%;
+    height: 60%;
+  }
 
-@media (min-width:480px) and (max-width:600px){
-
-    .block-block{
-        height: 650px;
-    }
-    .block-body{
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-    }
-    .block-left{
-        width: 95%;
-        height: 350px;
-    }
-    .block-right{
-        width: 95%;
-        height: 60%;
-    }
-
-    .block-right h3{
-        font-size: 1rem;
-        margin-top: 0px;
-    }
-    .block-right h1{
-        font-size: 1.7rem;
-    }
-    .block-right p{
-        width:100%;
-        font-size: 1rem;
-        text-align: center;
-    }
-
+  .block-right h3 {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  .block-right h1 {
+    font-size: 1.7rem;
+  }
+  .block-right p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
-@media (min-width:601px) and (max-width:768px){
-
-    .block-block{
-        height: 500px;
-    }
-    .block-left{
-        width: 55%;
-    }
-    .block-right{
-        width: 45%;
-        
-    }
-    .block-right h3{
-        font-size: 1.2rem;
-    }
-    .block-right h1{
-        font-size: 2rem;
-    }
-    .block-right p{
-        width:100%;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .block-left img{
-        height: 300px;
-        width: 95%;
-        justify-self: start;;
-    }
-
-
-
-
+@media (min-width: 601px) and (max-width: 768px) {
+  .block-block {
+    height: 500px;
+  }
+  .block-left {
+    width: 55%;
+  }
+  .block-right {
+    width: 45%;
+  }
+  .block-right h3 {
+    font-size: 1.2rem;
+  }
+  .block-right h1 {
+    font-size: 2rem;
+  }
+  .block-right p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .block-left img {
+    height: 300px;
+    width: 95%;
+    justify-self: start;
+  }
 }
