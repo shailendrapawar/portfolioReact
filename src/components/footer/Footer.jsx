@@ -4,12 +4,12 @@ function Footer({ data }) {
     console.log(data)
     return (
 
-        <footer className='footer-body'>
+        <footer className='footer-body h-60 flex flex-col bg-black text-white justify-evenly items-center'>
             {
                 data.map((v, i) => {
-                    return (<div key={i} className='footer-item'>
-                        <i>{v.icon}</i>
-                        <p>{v.desc}</p>
+                    return (<div key={i} className='footer-item flex items-center'>
+                        <i className=' h-11 w-11 p-2 border'>{v.icon}</i>
+                        <p className='flex items-center pl-2 break-words' >{v.desc}</p>
                     </div>)
                 })
             }
