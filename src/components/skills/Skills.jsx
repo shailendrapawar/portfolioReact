@@ -59,7 +59,7 @@ const Skills = () => {
 
   return (
     <div id='#skills' className='skills-block h-auto flex flex-col items-center justify-center pt-10 pb-10'>
-    <h2 className='text-yellow-500'>My-Skills</h2>
+    <h2 className='text-yellow-500'>My-Stack</h2>
       <div className='skills-body flex flex-wrap items-center justify-evenly'>
         <SkillCard name="Programming Languages" data={programming} />
         <SkillCard name="Scripting Languages" data={scripting} />

@@ -1,0 +1,42 @@
+.projectCard-body {
+  width: 70%;
+  border: 2px solid white;
+  transition: 0.2 ease-in-out;
+  background-color: black;
+}
+.projectCard-body h1 {
+  color:#0094FF;
+  font-size: 1.2rem;
+}
+.content-body {
+  height: 100%;
+  display: none;
+  transition: 0.2 ease-in-out;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+.content-body p {
+  height: 40%;
+  width: 90%;
+  font-size: 0.8rem;
+}
+.link-body {
+  width: 80%;
+  height: 20%;
+}
+.link-body a {
+  height: 100%;
+}
+.projectCard-body:hover .content-body{
+    display: flex;
+    animation: swipe 0.5s 1;
+}
+@keyframes swipe{
+    0%{
+        opacity: 0%;
+        translate: 30px 0px;
+    }
+    100%{
+        opacity: 100%;
+        translate: 0px 0px;
+    }
+}

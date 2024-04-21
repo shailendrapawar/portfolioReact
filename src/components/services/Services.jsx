@@ -34,7 +34,7 @@ const Services = () => {
                 <p className=' text-center text-slate-400'>{para1}</p>
                 <p className='text-slate-400 text-center'>{para2}</p>
 
-                <div className='service-icons-body flex flex-wrap justify-evenly items-center  gap-7  mt-5'>
+                <div className='service-icons-body flex flex-wrap justify-evenly items-center  gap-7  mt-5 mb-7'>
                 {
                     serviceIcons.map((v,i)=>{
                        return <ServiceIcon key={i} data ={v}/>

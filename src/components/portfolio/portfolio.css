@@ -1,0 +1,19 @@
+
+.portfolio-block{
+    background-color: #000814;
+}
+.portfolio-body{
+    width: 95%;
+    height: 95%;
+}
+.portfolio-body h1{
+    font-size: 1.7rem;
+}
+.project-list{
+    height: 80%;
+}
+.projects-bottom button{
+    height: 100%;
+    background-color: #FFCC00;
+    transition: 0.2s ease-in-out;
+}

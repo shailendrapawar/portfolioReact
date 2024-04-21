@@ -4,6 +4,7 @@ import LandingBlock from '../landingBlock/LandingBlock'
 import Block from '../block/Block'
 import Skills from '../skills/Skills'
 import Services from '../services/Services'
+import Portfolio from '../portfolio/Portfolio'
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
     <Block/>
     <Skills/>
     <Services/>
+    <Portfolio/>
     </div>
   )
 }
