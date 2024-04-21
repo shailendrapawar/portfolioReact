@@ -6,6 +6,7 @@
     border-left: 4px solid #0094FF;
     border-right: 4px solid #0094FF;
 }
+
 .serviceIcon-body i{
     height: 50px;
     width: 50px;
@@ -22,5 +23,11 @@ svg{
     width: 90%;
     font-size: 0.9rem;
     height:40%;
-
+}
+.serviceIcon-body i{
+    transition: 0.5s ease-in-out;
+    
+}
+.serviceIcon-body:hover i{
+    transform: rotateY(360deg);
 }

@@ -42,7 +42,7 @@ const Portfolio = () => {
         <div className='portfolio-block h-auto flex justify-center items-center pt-5 pb-7'>
             <div className='portfolio-body flex flex-col justify-evenly gap-6'>
                 <h3 className='text-yellow-400 text-center'>Portfolio</h3>
-                <h1 className='text-white text-center'>Projects of my domain</h1>
+                <h1 className='text-white text-center'>Projects of my <span className='text-blue-500'>Domain</span></h1>
                 <div className='project-list flex flex-wrap justify-evenly gap-6'>
                     {project.map((v, i) => {
                         return <ProjectCard key={i} data={v} />
