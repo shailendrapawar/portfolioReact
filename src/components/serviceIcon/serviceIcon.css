@@ -1,0 +1,26 @@
+.serviceIcon-body{
+    width: 95%;
+    min-width: 280px;
+    max-width: 380px;
+    height: 220px;
+    border-left: 4px solid #0094FF;
+    border-right: 4px solid #0094FF;
+}
+.serviceIcon-body i{
+    height: 50px;
+    width: 50px;
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+.serviceIcon-body h3{
+   font-size: 1.1rem;
+
+}
+.serviceIcon-body p{
+    width: 90%;
+    font-size: 0.9rem;
+    height:40%;
+
+}

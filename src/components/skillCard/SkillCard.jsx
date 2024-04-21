@@ -2,7 +2,6 @@ import React from 'react'
 import './skillCard.css'
 
 const SkillCard = ({ name, data }) => {
-    console.log(data)
     return (
         <div className='skill-card text-center flex flex-col justify-evenly mt-7 text-white rounded-xl overflow-hidden'>
             <h3 className=' grid place-items-center' >{name}</h3>
@@ -21,6 +20,5 @@ const SkillCard = ({ name, data }) => {
         </div>
     )
 }
-
 
 export default SkillCard
