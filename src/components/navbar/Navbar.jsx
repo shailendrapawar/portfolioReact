@@ -4,9 +4,26 @@ import { NavLink, Link } from 'react-router-dom'
 import { RiMenu3Line } from "react-icons/ri";
 import { TbArrowsCross } from "react-icons/tb";
 import { useNavigate } from 'react-router-dom'
+// import { useRef } from 'react'
+
 
 function Navbar() {
   const navigate = useNavigate()
+
+  const travel = (elem) => {
+    if(elem=="skills"){
+      window.scrollTo({top:1200,behavior:"smooth"})
+
+    }else if(elem=="service"){
+      window.scrollTo({top:2000,behavior:"smooth"})
+    }else{
+      window.scrollTo({top:0,behavior:"smooth"})
+    }
+
+  }
+
+
+
   //function for handling menu2-icon
   const [rotate, setRotate] = useState(true);
   const handleRotate = () => {
@@ -31,8 +48,8 @@ function Navbar() {
         <div onClick={() => navigate("/")} className='logo-icon flex justify-center items-center w-12 h-12'></div>
         <div className='center-nav flex items-center justify-between'>
           <NavLink className={({ isActive }) => isActive ? " grid active" : "grid"} to='/'>Home</NavLink>
-          <Link to="#skills"> Skills</Link>
-          <Link to="#services">Services</Link>
+          <a onClick={() => travel("skills")} > Skills</a>
+          <a onClick={() => travel("service")} >Services</a>
           <NavLink className={({ isActive }) => isActive ? " grid active" : "grid"} to='/projects'>Portfolio</NavLink>
         </div>
         <div className='contact-icon items-center flex'>

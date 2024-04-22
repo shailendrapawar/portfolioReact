@@ -1,7 +1,6 @@
 import React from 'react'
 import './footer.css'
 function Footer({ data }) {
-    console.log(data)
     return (
 
         <footer className='footer-body h-60 flex flex-col bg-black text-white justify-evenly items-center'>

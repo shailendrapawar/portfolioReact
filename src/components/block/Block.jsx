@@ -1,6 +1,7 @@
 import React from 'react'
 import './block.css'
-import imgSrc from './about-me.jpg'  
+import imgSrc from './about-me.jpg'
+
 const Block = () => {
     return (
         <div className='block-block flex justify-center items-center'>

@@ -1,6 +1,7 @@
 .block-block {
   background-color: #1a2634;
   height: 500px;
+  position: relative;
 }
 .block-body {
   width: 95%;
