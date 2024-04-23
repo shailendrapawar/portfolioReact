@@ -6,4 +6,13 @@
     background-color:#1a2634;
     width:100%;
     height:80vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+}
+.project-list-body::-webkit-scrollbar{
+    display: none;
 }
