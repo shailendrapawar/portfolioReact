@@ -1,0 +1,9 @@
+.select-page{
+ display: grid;
+ place-items: center;   
+}
+.project-list-body{
+    background-color:#1a2634;
+    width:100%;
+    height:80vh;
+}

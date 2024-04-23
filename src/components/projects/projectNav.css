@@ -1,0 +1,26 @@
+.project-nav{
+    background-color: #1a2634;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+}
+.project-nav a{
+    width: 30%;
+    height: 40px;
+    transition: 0.1s ease-in-out;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.project-nav a:hover{
+    transform: none;
+}
+.active2{
+    background-color: yellow;
+}
+.notActive{
+    background-color: rgb(130, 130, 130);
+    border: none;
+}

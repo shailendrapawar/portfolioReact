@@ -10,7 +10,6 @@
     width: 80%;
     font-size: 0.8rem;
     height: 90%;
-    /* word-break:break-all; */
 }
 @media screen and (min-width:600px){
     .footer-body{
