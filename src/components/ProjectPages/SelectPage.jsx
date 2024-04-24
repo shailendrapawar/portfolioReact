@@ -2,7 +2,12 @@ import React from 'react'
 import './pages.css'
 const SelectPage = () => {
   return (
-    <div className=' select-page'>Select Category</div>
+    <div className=' select-page'>
+      <div>
+
+      </div>
+      <h1 className=' text-center'>Please choose a Category</h1>
+    </div>
   )
 }
 

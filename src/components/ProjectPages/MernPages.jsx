@@ -1,6 +1,7 @@
 import React from 'react'
 import './pages.css'
 import ProjectCard from '../portfolio/ProjectCard'
+import Sorry from '../../Sorry'
 const MernPages = () => {
 
   const MernProjects = [
@@ -25,7 +26,7 @@ const MernPages = () => {
   if (MernProjects.length == 0) {
     return (
       <div className='project-list-body'>
-        <h1 className='text-white'>no projects to show</h1>
+        <Sorry />
       </div>
     )
   } else {
