@@ -1,6 +1,8 @@
 .landing-block {
   background-color: #000814;
-  height: 92vh;
+  min-height: 92vh;
+  height: auto;
+
 }
 .landing-body {
   background-color: #000814;
@@ -53,19 +55,28 @@
   background-color: black;
   border-radius: 50%;
   transition: 0.1s ease-in-out;
+  padding: 6px;
 }
 svg {
   width: 30px;
   height: 30px;
 }
-a:hover {
+/* a:hover {
   transform: scale(1.1);
-}
+} */
 .left-bottom {
   max-width: 350px;
   animation: loadingLeft 1s 1;
 }
 .left-bottom button {
+  height: 50px;
+  width: 45%;
+  max-width: 150px;
+  border: 2px solid rgb(0, 128, 255);
+  transition: 0.2s ease-in-out;
+  font-size: 1.4rem;
+}
+.resume-btn{
   height: 50px;
   width: 45%;
   max-width: 150px;
@@ -179,6 +190,12 @@ a:hover {
     max-width: 120px;
     font-size: 1rem;
   }
+  .resume-btn{
+    height: 40px;
+    width: 40%;
+    max-width: 120px;
+    font-size: 1rem;
+  }
 
   .landing-right {
     height: 40%;
@@ -242,6 +259,12 @@ a:hover {
     max-width: 120px;
     font-size: 1rem;
   }
+  .resume-btn{
+    height: 40px;
+    width: 40%;
+    max-width: 120px;
+    font-size: 1rem;
+  }
   .landing-right {
     height: 40%;
     width: 100%;
@@ -280,6 +303,11 @@ a:hover {
     height: 25px;
   }
   .left-bottom button {
+    height: 40px;
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  .resume-btn{
     height: 40px;
     width: 40%;
     font-size: 1.2rem;

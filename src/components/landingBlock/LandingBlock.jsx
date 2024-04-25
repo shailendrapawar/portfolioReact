@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 function LandingBlock() {
 
   const navigate=useNavigate()
+  
 
   return (
     <div className="landing-block flex justify-center items-center">
@@ -43,9 +44,9 @@ function LandingBlock() {
             <button onClick={()=>navigate('/contact')} className=" border-2 rounded-md text-white hover:bg-blue-500">
               let's talk
             </button>
-            <button className="text-white bg-blue-500 rounded-md">
+            <a  href="https://drive.google.com/file/d/1cmbPOUtSZCXEBGBaWFLzrjlgw8XhQIuz/view?usp=drive_link" target="blank" className= "resume-btn grid place-content-center text-white bg-blue-500 rounded-md">
               Resume
-            </button>
+            </a>
           </div>
         </div>
 
