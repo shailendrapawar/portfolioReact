@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./landingBlock.css";
 import img from "./portfolio-pic1.svg";
 import { FaGithub } from "react-icons/fa6";
@@ -9,8 +9,9 @@ import { useNavigate } from "react-router-dom";
 function LandingBlock() {
 
   const navigate=useNavigate()
-  
-
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="landing-block flex justify-center items-center">
       <div className="landing-body flex">

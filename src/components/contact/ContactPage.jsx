@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import './contact.css'
 import { IoCaretBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser'
 
 function ContactPage() {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      },[])
+      
 
     const [senderName, setsenderName] = useState("");
     const [senderEmail, setsenderEmail] = useState("");

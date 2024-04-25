@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './projects.css'
 import { Outlet } from 'react-router-dom'
 import ProjectNav from './ProjectNav'
@@ -8,6 +8,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 
 function Projects() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+  
   const footerData = [
     {
       icon: <FaLocationDot />,
