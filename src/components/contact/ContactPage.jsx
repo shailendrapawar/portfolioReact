@@ -1,14 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import { IoCaretBackCircle } from "react-icons/io5";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import emailjs from '@emailjs/browser'
 
 function ContactPage() {
 
-    const navigate=useNavigate()
-    const handleClick=()=>{
+    const [senderName, setsenderName] = useState("");
+    const [senderEmail, setsenderEmail] = useState("");
+    const [subject, setsubject] = useState("");
+    const [senderMsg, setSenderMsg] = useState("");
+
+
+    const reset = () => {
+        setsenderName("")
+        setsenderEmail("")
+        setsubject("")
+        setSenderMsg("");
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (senderEmail == "" || senderEmail == "" || subject == "" || senderMsg == "") {
+            alert("please enter all fields first");
+
+        } else {
+            const serviceId = 'service_z2c3hqr'
+            const templateId = 'template_ezowel7'
+            const publicKey = 'vstl-GX54CHYdt9YV'
+            const templateparams = {
+                to_name: "SHAILU",
+                from_name: senderName,
+                from_email: senderEmail,
+                subject: subject,
+                message: senderMsg
+            }
+            emailjs.send(serviceId, templateId, templateparams, publicKey)
+                .then((res) => {
+                    alert(`Thank-you:-${senderName}, your email has been recieved successfully`);
+                    reset();
+                }).catch((err) => {
+                    alert("Sorry email, didn't sent successfully");
+                })
+        }
+    }
+    const navigate = useNavigate()
+    const handleClick = () => {
         navigate(-1);
     }
+
     return (
         <div className='contactPage flex flex-col items-center'>
 
@@ -24,13 +64,13 @@ function ContactPage() {
                 </div>
 
                 <form className='flex flex-col items-center justify-evenly'>
-                    <input placeholder='enter your name'></input>
-                    <input placeholder='enter your email'></input>
-                    <input placeholder="what is this regarding"></input>
-                    <textarea ></textarea>
+                    <input required value={senderName} onChange={(e) => setsenderName(e.target.value)} placeholder='enter your name' type='text'></input>
+                    <input required value={senderEmail} onChange={(e) => setsenderEmail(e.target.value)} placeholder='enter your email' type='email'></input>
+                    <input required value={subject} onChange={(e) => setsubject(e.target.value)} placeholder="what is this regarding" type='text'></input>
+                    <textarea required value={senderMsg} onChange={(e) => setSenderMsg(e.target.value)} className=' outline-none rounded-lg p-1 resize-none' type="text" ></textarea>
                 </form>
-                
-                <button id='submit' className='text-white bg-yellow-500'>send message</button>
+
+                <button id='submit' onClick={(e) => handleSubmit(e)} className='text-black bg-yellow-500'>Send </button>
 
             </div>
         </div>

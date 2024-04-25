@@ -10,8 +10,9 @@
     place-items: center;
     cursor: pointer;
 }
-.project-nav a:hover{
-    transform: none;
+
+.project-nav a:hover {
+    transform: scale(1.1);
 }
 .active2{
     background-color: yellow;
