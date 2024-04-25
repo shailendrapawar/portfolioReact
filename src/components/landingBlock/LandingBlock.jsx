@@ -52,7 +52,7 @@ function LandingBlock() {
         </div>
 
         <div className="landing-right grid place-items-center">
-          <img src={img}></img>
+          <img src={img} loading="lazy"></img>
         </div>
       </div>
     </div>
