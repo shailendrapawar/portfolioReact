@@ -72,7 +72,7 @@ function ContactPage() {
                     <input required value={senderName} onChange={(e) => setsenderName(e.target.value)} placeholder='enter your name' type='text'></input>
                     <input required value={senderEmail} onChange={(e) => setsenderEmail(e.target.value)} placeholder='enter your email' type='email'></input>
                     <input required value={subject} onChange={(e) => setsubject(e.target.value)} placeholder="what is this regarding" type='text'></input>
-                    <textarea required value={senderMsg} onChange={(e) => setSenderMsg(e.target.value)} className=' outline-none rounded-lg p-1 resize-none' type="text" ></textarea>
+                    <textarea placeholder='Enter your Message' required value={senderMsg} onChange={(e) => setSenderMsg(e.target.value)} className=' outline-none rounded-lg p-1 resize-none' type="text" ></textarea>
                 </form>
 
                 <button id='submit' onClick={(e) => handleSubmit(e)} className='text-black bg-yellow-500'>Send </button>
