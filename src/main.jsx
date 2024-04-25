@@ -11,7 +11,7 @@ import MernPages from './components/ProjectPages/MernPages.jsx';
 import BasicPage from './components/ProjectPages/BasicPage.jsx';
 import OtherPages from './components/ProjectPages/OtherPages.jsx';
 import SelectPage from './components/ProjectPages/SelectPage.jsx';
-import React from 'react'
+import React from 'react';
 
 const myRouter=createBrowserRouter(
   createRoutesFromElements(
