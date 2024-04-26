@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter,Route,createRoutesFromElements, RouterProvider} from "react-router-dom";
 import './index.css'
 import Layout from './Layout.jsx'
-
 import ContactPage from './components/contact/ContactPage.jsx';
 import Home from './components/home/Home.jsx';
 import Projects from './components/projects/Projects.jsx';
@@ -11,7 +10,6 @@ import MernPages from './components/ProjectPages/MernPages.jsx';
 import BasicPage from './components/ProjectPages/BasicPage.jsx';
 import OtherPages from './components/ProjectPages/OtherPages.jsx';
 import SelectPage from './components/ProjectPages/SelectPage.jsx';
-import React from 'react';
 
 const myRouter=createBrowserRouter(
   createRoutesFromElements(
