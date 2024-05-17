@@ -7,7 +7,8 @@ import { FaFacebook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 function LandingBlock() {
-
+  const resumeLink="https://drive.google.com/file/d/1OihNkFuoy8XUJNg5WyyvKInua5349XX4/view?usp=sharing"
+ const linkedInLInk="https://www.linkedin.com/in/shailendra-pawar792/"
   const navigate=useNavigate()
   useEffect(()=>{
     window.scrollTo(0,0);
@@ -30,7 +31,7 @@ function LandingBlock() {
               <a href="https://github.com/shailendrapawar" target="blank">
                 <FaGithub />
               </a>
-              <a href="www.linkedin.com/in/shailendra-pawar792" target="blank">
+              <a href={linkedInLInk} target="blank">
                 <FaLinkedin />
               </a>
               <a
@@ -45,7 +46,7 @@ function LandingBlock() {
             <button onClick={()=>navigate('/contact')} className=" border-2 rounded-md text-white hover:bg-blue-500">
               let's talk
             </button>
-            <a  href="https://drive.google.com/file/d/1cmbPOUtSZCXEBGBaWFLzrjlgw8XhQIuz/view?usp=drive_link" target="blank" className= "resume-btn grid place-content-center text-white bg-blue-500 rounded-md">
+            <a  href={resumeLink} target="blank" className= "resume-btn grid place-content-center text-white bg-blue-500 rounded-md">
               Resume
             </a>
           </div>
