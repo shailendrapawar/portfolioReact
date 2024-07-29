@@ -8,13 +8,7 @@ const Portfolio = () => {
     const navigate=useNavigate()
 
     const project = [
-        {
-            title: "Misc-Music Player",
-            desc: "Music Player using HTML CSS Javascript Local storage is used for song data",
-            image: "url(./assets/misc-music.png)",
-            github: "https://github.com/shailendrapawar/miscMusic-player",
-            live: "https://misc-music-player.vercel.app/"
-        },
+       
         {
             title: "Weeko-weather",
             desc: "Weather App using HTML CSS Javascript. Open Weathermap API is used for data",
@@ -23,11 +17,18 @@ const Portfolio = () => {
             live: "https://weather-azxu0zegx-shailendra-pawars-projects.vercel.app/"
         },
         {
+            title: "Chat-ly",
+            desc: "Chatly allows real-time communication build with- MERN stack integrated Socket-io",
+            image: "url(./assets/mernChat.png)",
+            github: "https://github.com/shailendrapawar/chatlyFrontend",
+            live: "https://mern-chat-app-frontend-gold.vercel.app/"
+        },
+        {
             title: "Scribble",
-            desc: "Simple Note-pad which allows CRUD operation for user's data. MongoDb,ExpressJs,ReactJS,NodeJS",
-            image: "url(./assets/notepad.png)",
-            github: "https://github.com/shailendrapawar/scribble-note-pad",
-            live: "https://github.com/shailendrapawar/scribble-note-pad"
+            desc: "Note/To-do app which allows user to manage task and data effectively. MongoDb,ExpressJs,ReactJS,NodeJS,Socket-Io",
+            image: "url(./assets/scribble.png)",
+            github: "https://github.com/shailendrapawar/scribbleBackend",
+            live: "https://scribble-frontend-xi.vercel.app/"
         },
         {
             title: "NOTE-VERSE",
