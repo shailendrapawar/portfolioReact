@@ -62,8 +62,14 @@ function Navbar({scrollFunction,skillRef,serviceRef}) {
         <div id='nav2-items' className='nav2-items text-white bg-black items-center'>
           <div className='nav2-inner flex flex-col items-center justify-around cursor-pointer'>
             <NavLink onClick={handleClick} to='/' className={({ isActive }) => isActive ? "active items" : "items"}>HOME</NavLink>
-            <Link onClick={handleClick} className='items'>Skills</Link>
-            <Link onClick={handleClick} className='items'>Services</Link>
+            <Link onClick={()=>{
+              scrollFunction(skillRef);
+              handleClick();
+            }} o className='items'>Skills</Link>
+            <Link onClick={()=>{
+              scrollFunction(serviceRef);
+              handleClick()
+            }} className='items'>Services</Link>
             <NavLink onClick={handleClick} to='/projects' className={({ isActive }) => isActive ? "active items" : "items"}>PORTFOLIO</NavLink>
             <NavLink onClick={handleClick} to='/contact' className='items'>CONTACT</NavLink>
           </div>
