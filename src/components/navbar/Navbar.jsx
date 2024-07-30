@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 // import { useRef } from 'react'
 
 
-function Navbar() {
+function Navbar({scrollFunction,skillRef,serviceRef}) {
   const navigate = useNavigate()
 
   const travel = (elem) => {
@@ -48,8 +48,8 @@ function Navbar() {
         <div onClick={() => navigate("/")} className='logo-icon flex justify-center items-center w-12 h-12'></div>
         <div className='center-nav flex items-center justify-between'>
           <NavLink className={({ isActive }) => isActive ? " grid active" : "grid"} to='/'>Home</NavLink>
-          <a onClick={() => travel("skills")} > Skills</a>
-          <a onClick={() => travel("service")} >Services</a>
+          <a  onClick={() => scrollFunction(skillRef)} > skills</a>
+          <a  onClick={() => scrollFunction(serviceRef)} >services</a>
           <NavLink className={({ isActive }) => isActive ? " grid active" : "grid"} to='/projects'>Portfolio</NavLink>
         </div>
         <div className='contact-icon items-center flex'>

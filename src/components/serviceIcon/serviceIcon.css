@@ -10,6 +10,7 @@
 .serviceIcon-body i{
     height: 50px;
     width: 50px;
+    animation: rotateX 1.5s linear infinite;
 }
 svg{
     height: 100%;
@@ -28,6 +29,13 @@ svg{
     transition: 0.5s ease-in-out;
     
 }
-.serviceIcon-body:hover i{
-    transform: rotateY(360deg);
+
+
+@keyframes rotateX{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
