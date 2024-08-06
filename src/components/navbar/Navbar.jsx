@@ -65,10 +65,11 @@ function Navbar({scrollFunction,skillRef,serviceRef}) {
             <Link onClick={()=>{
               scrollFunction(skillRef);
               handleClick();
-            }} o className='items'>Skills</Link>
+            }}  className='items'>Skills</Link>
             <Link onClick={()=>{
-              scrollFunction(serviceRef);
+              scrollFunction(serviceRef)
               handleClick()
+
             }} className='items'>Services</Link>
             <NavLink onClick={handleClick} to='/projects' className={({ isActive }) => isActive ? "active items" : "items"}>PORTFOLIO</NavLink>
             <NavLink onClick={handleClick} to='/contact' className='items'>CONTACT</NavLink>

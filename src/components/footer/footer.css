@@ -6,6 +6,9 @@
 }
 .footer-item i{
     border-radius: 50%;
+    animation-name: rotateX;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .footer-item p{
     width: 80%;
@@ -21,5 +24,14 @@
     .footer-item{
         width: 25%;
         height: 40%;
+    }
+}
+
+@keyframes rotateX{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
     }
 }
