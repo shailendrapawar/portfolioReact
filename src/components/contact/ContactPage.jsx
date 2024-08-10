@@ -16,7 +16,7 @@ function ContactPage() {
     const [subject, setsubject] = useState("");
     const [senderMsg, setSenderMsg] = useState("");
 
-
+    const[loading, setLoading]=React.useState(false);
     const reset = () => {
         setsenderName("")
         setsenderEmail("")
@@ -40,8 +40,10 @@ function ContactPage() {
                 subject: subject,
                 message: senderMsg
             }
+            setLoading(true);
             emailjs.send(serviceId, templateId, templateparams, publicKey)
                 .then((res) => {
+                    setLoading(false);
                     alert(`Thank-you:-${senderName}, your email has been recieved successfully`);
                     reset();
                 }).catch((err) => {
@@ -75,7 +77,7 @@ function ContactPage() {
                     <textarea placeholder='Enter your Message' required value={senderMsg} onChange={(e) => setSenderMsg(e.target.value)} className=' outline-none rounded-lg p-1 resize-none' type="text" ></textarea>
                 </form>
 
-                <button id='submit' onClick={(e) => handleSubmit(e)} className='text-black bg-yellow-500'>Send </button>
+                <button id='submit' onClick={(e) => handleSubmit(e)} className='text-black bg-yellow-500'>{loading?"Sending...":"Send"} </button>
 
             </div>
         </div>
