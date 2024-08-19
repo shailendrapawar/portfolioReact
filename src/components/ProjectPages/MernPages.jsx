@@ -12,14 +12,20 @@ const MernPages = () => {
       image: "url(/assets/scribble.png)",
       github: "https://github.com/shailendrapawar/scribbleBackend",
       live: "https://scribble-frontend-xi.vercel.app/"
-  },
+    },
     {
       title: "Chat-ly",
       desc: "Chatly allows real-time communication build with- MERN stack integrated Socket-io",
       image: "url(/assets/mernChat.png)",
       github: "https://github.com/shailendrapawar/chatlyFrontend",
       live: "https://mern-chat-app-frontend-gold.vercel.app/"
-  },
+    }, {
+      title: "BODY-SYNC",
+      desc: "A dynamic web app that offers nutrition tracking, diverse exercise insights, and real-time content interaction with robust authentication. ",
+      image: "url(/assets/body-sync.png)",
+      github: "https://github.com/shailendrapawar/bodySyncBackend",
+      live: "https://body-sync-frontend.vercel.app/"
+    },
     {
       title: "NOTE-VERSE",
       desc: "Blog app which allows user to Create,Edit,Delete blog. Used JWT for authentication (Login-Signup). MongoDb,ExpressJs,ReactJS,NodeJS",

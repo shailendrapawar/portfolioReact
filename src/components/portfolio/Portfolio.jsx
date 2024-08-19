@@ -37,6 +37,13 @@ const Portfolio = () => {
             github: "https://github.com/shailendrapawar/note-verse-blog-app",
             live: "https://github.com/shailendrapawar/note-verse-blog-app"
         },
+        {
+            title:"BODY-SYNC",
+            desc:"A dynamic web app that offers nutrition tracking, diverse exercise insights, and real-time content interaction with robust authentication. ",
+            image:"url(./assets/body-sync.png)",
+            github:"https://github.com/shailendrapawar/bodySyncBackend",
+            live:"https://body-sync-frontend.vercel.app/"
+        }
     ]
 
     return (
