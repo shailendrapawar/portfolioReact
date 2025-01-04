@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 function LandingBlock() {
-  const resumeLink="https://drive.google.com/file/d/1SfBXsAYMyV4tD5-_Np1-Wo6C1HNHBOLW/view?usp=sharing"
+  const resumeLink="https://drive.google.com/drive/folders/1-OdardWOtvSyZfOf8WlEV3P45mQkgqAH?usp=sharing"
  const linkedInLInk="https://www.linkedin.com/in/shailendra-pawar792/"
   const navigate=useNavigate()
   useEffect(()=>{
