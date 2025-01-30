@@ -11,7 +11,13 @@ const OtherPages = () => {
         image: "url(/assets/bloodReservation.png)",
         github: "https://github.com/shailendrapawar/bloodReservation",
         live: "https://blood-reservation.vercel.app/"
-      },
+      },{
+        title:"Crust Bites",
+        desc:"Basic food ordering app (using  React-JS, Redux library), where any user can order the food items effectively",
+        image:"url(/assets/crustyBites.png)",
+        github:"https://github.com/shailendrapawar/foodOrder-app",
+        live:"https://crusty-bites.vercel.app/"
+      }
     
   ]
 

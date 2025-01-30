@@ -5,6 +5,7 @@ import Sorry from '../../Sorry'
 const BasicPage = () => {
 
   const basicProjects = [
+    
     {
       title: "Misc-Music Player",
       desc: "Music Player using HTML CSS Javascript Local storage is used for song data",
@@ -18,6 +19,13 @@ const BasicPage = () => {
       image: "url(/assets/weeko-weather.png)",
       github: "https://github.com/shailendrapawar/weather-app",
       live: "https://weather-azxu0zegx-shailendra-pawars-projects.vercel.app/"
+    },
+    {
+      title:"Shopping Cart",
+      desc:"A simple shopping Cart functionality using Redux Library fpor state management",
+      image:"url(/assets/shoppingCart.png)",
+      github:"https://github.com/shailendrapawar/shoppingCart",
+      live:"https://shopping-cart-chi-taupe.vercel.app/"
     },
     {
       title: "Calculator",

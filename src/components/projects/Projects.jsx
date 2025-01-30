@@ -22,7 +22,7 @@ function Projects() {
       desc: "7456920792"
     }, {
       icon: <MdAttachEmail />,
-      desc: "shailendrapawar7920@gmail.com"
+      desc: "shailendrapawar792@gmail.com"
     }
   ]
   return (
