@@ -21,6 +21,13 @@ const BasicPage = () => {
       live: "https://weather-azxu0zegx-shailendra-pawars-projects.vercel.app/"
     },
     {
+      title: "Chat-ly",
+      desc: "Chatly allows real-time communication build with- MERN stack integrated Socket-io",
+      image: "url(/assets/mernChat.png)",
+      github: "https://github.com/shailendrapawar/chatlyFrontend",
+      live: "https://mern-chat-app-frontend-gold.vercel.app/"
+    },
+    {
       title:"Shopping Cart",
       desc:"A simple shopping Cart functionality using Redux Library fpor state management",
       image:"url(/assets/shoppingCart.png)",

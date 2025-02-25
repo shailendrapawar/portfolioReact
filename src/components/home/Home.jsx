@@ -120,6 +120,11 @@ function Home() {
       name: "ExpressJS",
       icon: "url(./assets/express-icon1.svg)"
     },
+    {
+      name:"Redux",
+      icon:"url(./assets/redux-icon.svg)"
+
+    }
   ]
 
 

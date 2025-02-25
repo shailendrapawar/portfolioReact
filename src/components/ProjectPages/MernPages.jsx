@@ -14,12 +14,13 @@ const MernPages = () => {
       live: "https://scribble-frontend-xi.vercel.app/"
     },
     {
-      title: "Chat-ly",
-      desc: "Chatly allows real-time communication build with- MERN stack integrated Socket-io",
-      image: "url(/assets/mernChat.png)",
-      github: "https://github.com/shailendrapawar/chatlyFrontend",
-      live: "https://mern-chat-app-frontend-gold.vercel.app/"
-    }, {
+      title: "Buzz-Talk",
+      desc: " A simple chat app allows user to have real time communication, one-to-one with privacy.Implemented redux toolkit for state management for predictive data. Built using MERN stack with integration of Socket-io.",
+      image: "url(/assets/buzzTalk.png)",
+      github: "https://github.com/shailendrapawar/mernChatBackend",
+      live: "https://mern-chat-frontend-sepia.vercel.app/"
+    },
+    {
       title: "BODY-SYNC",
       desc: "A dynamic web app that offers nutrition tracking, diverse exercise insights, and real-time content interaction with robust authentication. ",
       image: "url(/assets/body-sync.png)",
